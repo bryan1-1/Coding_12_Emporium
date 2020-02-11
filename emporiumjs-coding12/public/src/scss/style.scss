@@ -1,5 +1,8 @@
 
-
+@import "../scss/variables";
 @import "../../../../node_modules/bootstrap/scss/bootstrap.scss";
 @import "./Icons";
 
+.roundedBtn{
+    border-radius: 25px;
+}
