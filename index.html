@@ -12,30 +12,53 @@
 
     <header>
        <div class="container">
-           <!-- modal -->
+           <!-- modal -->   
            <div id="myModal" class="modal">
 
-        
-            <div class="modal-content">
+            <!-- Modal content -->
+            <div class="modal-content bg-dark text-primary">
               <span class="close">&times;</span>
-              <p>Some text in the Modal..</p>
+            <!-- CONTENT INSIDE MODAL -->
+           <div class="container">
+            <form>
+                <h2>Log in </h2>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="form-group form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <button type="submit" class="btn btn-danger">Submit</button>
+                <a class="ml-auto register" href="#">Register</a>
+              </form>
+              
+           </div>
+              <!-- CONTENT ABOVE IS THE CONTENT INSIDE THE MODAL -->
             </div>
-          
+          <!-- end modal -->
           </div>
            <!-- modal -->
-           <div class="row mt-3">
+           <div class="row mt-3 ">
                <div class="col-12 mb-5">
                 <h1 class="title" style="font-weight: bold; text-align: center;">emporium.</h1>
                </div>
            </div>
-           <div class="row ">
-               <div class="container">
+           <div class="row mb-5 whole-nav">
+               <div class="container ">
                    <div class="col">
                     <nav class="navbar navbar-expand-lg navbar-light bg-transparent mt-5">
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                           <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse " id="navbarNav">
+                        <h4 style="display: none;">emporium.</h4>
                           <ul class="navbar-nav mx-auto text-success">
                             <li class="nav-item mx-2 active">
                               <a class="nav-link " href="#">Home <span class="sr-only">(current)</span></a>
@@ -60,7 +83,7 @@
                                 <button type="button" class="bt white btn-white border btn-sm"></button>
                               </li>
                               <li class="nav-item mx-2">
-                                <button type="button" data-toggle="modal" data-target="#myModal" class="btn connect btn-secondary btn-sm">Connextion</button>
+                                <button type="button" id="myBtn" class="btn connect btn-secondary btn-sm">Connextion</button>
                                </li>
                           </ul>
                         </div>
