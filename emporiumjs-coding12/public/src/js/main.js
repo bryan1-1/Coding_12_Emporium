@@ -120,3 +120,13 @@ register.addEventListener("click",()=>{
      </div>`
   })
 })
+var nav = document.querySelector(".navElem")
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+   nav.style.top = "0";
+  } else {
+   nav.style.top = "-50px";
+  }
+}

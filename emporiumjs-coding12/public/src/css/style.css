@@ -15837,11 +15837,10 @@ ul {
   cursor: pointer;
 }
 
-.whole-nav {
-  position: -webkit-sticky;
-  /* Safari */
-  position: sticky;
-  top: 0;
-}
+/* .whole-nav{
+   /*
+   position: fixed;
+   top: 0;
+ }*/
 
 /*# sourceMappingURL=style.css.map */
