@@ -121,12 +121,26 @@ register.addEventListener("click",()=>{
   })
 })
 var nav = document.querySelector(".navElem")
+var empo = document.querySelector(".emporiumNav")
 window.onscroll = function() {scrollFunction()};
 
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+/*function scrollFunction() {
+  if (window.innerHeight > 144 || document.documentElement.scrollTop > 144) {
    nav.style.top = "0";
   } else {
    nav.style.top = "-50px";
   }
-}
+}*/
+function scrollFunction() {
+    if (window.innerHeight < 144 || document.documentElement.scrollTop < 144) {
+      document.getElementById("navbar").style.top = "144px";
+      console.log(window.scrollY)
+      empo.style.display="none"
+    } else {
+      document.getElementById("navbar").style.top = "0px";
+      console.log(window.scrollY)
+      empo.style.display="initial"
+
+    }
+  } 
+
