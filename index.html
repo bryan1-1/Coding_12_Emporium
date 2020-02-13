@@ -8,14 +8,27 @@
 </head>
 <body>
     <!-- header starts -->
+    <!-- Modal -->
+
     <header>
        <div class="container">
+           <!-- modal -->
+           <div id="myModal" class="modal">
+
+        
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <p>Some text in the Modal..</p>
+            </div>
+          
+          </div>
+           <!-- modal -->
            <div class="row mt-3">
                <div class="col-12 mb-5">
-                <h1 style="font-weight: bold; text-align: center;">emporium.</h1>
+                <h1 class="title" style="font-weight: bold; text-align: center;">emporium.</h1>
                </div>
            </div>
-           <div class="row">
+           <div class="row ">
                <div class="container">
                    <div class="col">
                     <nav class="navbar navbar-expand-lg navbar-light bg-transparent mt-5">
@@ -23,11 +36,11 @@
                           <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse " id="navbarNav">
-                          <ul class="navbar-nav mx-auto">
+                          <ul class="navbar-nav mx-auto text-success">
                             <li class="nav-item mx-2 active">
                               <a class="nav-link " href="#">Home <span class="sr-only">(current)</span></a>
                             </li>
-                            <li class="nav-item mx-2">
+                            <li class="nav-item mx-2 ">
                               <a class="nav-link" href="#">product</a>
                             </li>
                             <li class="nav-item mx-2">
@@ -47,7 +60,7 @@
                                 <button type="button" class="bt white btn-white border btn-sm"></button>
                               </li>
                               <li class="nav-item mx-2">
-                                <button type="button" class="btn btn-secondary btn-sm">Connextion</button>
+                                <button type="button" data-toggle="modal" data-target="#myModal" class="btn connect btn-secondary btn-sm">Connextion</button>
                                </li>
                           </ul>
                         </div>

@@ -1,23 +1,16 @@
-
 @import "./variable.scss";
 @import "../../../../node_modules/bootstrap/scss/bootstrap.scss";
 @import "./Icons";
-
 .roundedBtn{
-    border-radius: 25px;
-}
+    border-radius: 25px;}
 .Emporium{
      background-image: url(../../img/cta-bg.jpg);
      height: 450px;
      background-repeat: no-repeat;
      background-size: cover;
      background-position-x: center;
-     background-position-y: center;
-}
-li{
-    list-style:none;
-    margin-left: auto;
-}
-ul{
-    padding: 0;
-}
+     background-position-y: center;}
+li{list-style:none; margin-left: auto;}
+ul{  padding: 0;}
+
+
