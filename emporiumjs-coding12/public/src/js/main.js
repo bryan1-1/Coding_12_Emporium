@@ -139,28 +139,18 @@ function scrollFunction() {
 
 //cAROUSEL
 
-// Author: Hoang Tran (https://www.facebook.com/profile.php?id=100004848287494)
-// Github verson (1 file .html): https://github.com/HoangTran0410/3DCarousel/blob/master/index.html
 
-
-// You can change global variables here:
+// global variables
 var radius = 440; // how big of the radius 240
 var autoRotate = false; // auto rotate or not
 var rotateSpeed = -60; // unit: seconds/360 degrees
-var imgWidth = 120; // width of images (unit: px)
-var imgHeight = 170; // height of images (unit: px)
+var imgWidth = 200; // width of images (unit: px)
+var imgHeight = 200; // height of images (unit: px)
 
 // Link of background music - set 'null' if you dont want to play background music
 var bgMusicURL = 'https://voca.ro/4Qhx9oymJAm';
 var bgMusicControls = true; // Show UI music control
 
-/*
-     NOTE:
-       + imgWidth, imgHeight will work for video
-       + if imgWidth, imgHeight too small, play/pause button in <video> will be hidden
-       + Music link are taken from: https://hoangtran0410.github.io/Visualyze-design-your-own-/?theme=HauMaster&playlist=1&song=1&background=28
-       + Custom from code in tiktok video  https://www.facebook.com/J2TEAM.ManhTuan/videos/1353367338135935/
-*/
 
 
 // ===================== start =======================
@@ -192,7 +182,7 @@ function init(delayTime) {
 
 function applyTranform(obj) {
   // Constrain the angle of camera (between 0 and 180)
-  if(tY > 0) tY = 0; //180 =180
+  if(tY > 0) tY = 10; //180 =180
   if(tY < 0) tY = 0;
 
   // Apply the angle
