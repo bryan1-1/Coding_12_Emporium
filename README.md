@@ -45,4 +45,4 @@ The website is almost fully responsive.
 exceptions are:
 The navbar has not been made fully responsive.
 
-author Bryan the fool
+author Bryan the fool.
