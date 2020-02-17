@@ -16,26 +16,26 @@ var connect = document.querySelector(".connect")
 connect.addEventListener("click",()=>{
     
 })
-// Get the modal
+
 var modal = document.getElementById("myModal");
 
 // Get the button that opens the modal
 var btn = document.getElementById("myBtn");
 
-// Get the <span> element that closes the modal
+
 var span = document.getElementsByClassName("close")[0];
 
-// When the user clicks on the button, open the modal
+
 btn.onclick = function() {
   modal.style.display = "block";
 }
 
-// When the user clicks on <span> (x), close the modal
+
 span.onclick = function() {
   modal.style.display = "none";
 }
 
-// When the user clicks anywhere outside of the modal, close it
+
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
@@ -123,7 +123,7 @@ register.addEventListener("click",()=>{
 var nav = document.querySelector(".navElem")
 var empo = document.querySelector(".emporiumNav")
 window.onscroll = function() {scrollFunction()};
-
+//Nav sticky and positioning + Emporium appearing
 function scrollFunction() {
     if (window.innerHeight < 144 || document.documentElement.scrollTop < 144) {
       document.getElementById("navbar").style.top = "144px";
@@ -137,24 +137,16 @@ function scrollFunction() {
     }
   } 
 
-//cAROUSEL
+//carousel javascript sort of 3D
 
-
-// global variables
-var radius = 440; // how big of the radius 240
-var autoRotate = false; // auto rotate or not
-var rotateSpeed = -60; // unit: seconds/360 degrees
-var imgWidth = 200; // width of images (unit: px)
-var imgHeight = 200; // height of images (unit: px)
-
-// Link of background music - set 'null' if you dont want to play background music
-var bgMusicURL = 'https://voca.ro/4Qhx9oymJAm';
-var bgMusicControls = true; // Show UI music control
-
-
+var radius = 440; // Radius of the carousel
+var autoRotate = false; // enable auto rotate or disable boolean variable
+var rotateSpeed = -60; // rotate speed
+var imgWidth = 200; // img width
+var imgHeight = 200; // img height
 
 // ===================== start =======================
-// animation start after 1000 milis
+// animation if auto rotate true 
 setTimeout(init, 1000);
 
 var odrag = document.getElementById('drag-container');
@@ -167,7 +159,7 @@ var aEle = [...aImg, ...aVid]; // combine 2 arrays
 ospin.style.width = imgWidth + "px";
 ospin.style.height = imgHeight + "px";
 
-// Size of ground - depend on radius
+// Size of ground radius width
 var ground = document.getElementById('ground');
 ground.style.width = radius * 3 + "px";
 ground.style.height = radius * 3 + "px";
@@ -181,7 +173,7 @@ function init(delayTime) {
 }
 
 function applyTranform(obj) {
-  // Constrain the angle of camera (between 0 and 180)
+  // angle of camera 180 max
   if(tY > 0) tY = 10; //180 =180
   if(tY < 0) tY = 0;
 
@@ -198,13 +190,11 @@ var sX, sY, nX, nY, desX = 0,
     tX = 0,
     tY = 10;
 
-// auto spin
+// auto spin if true
 if (autoRotate) {
   var animationName = (rotateSpeed > 0 ? 'spin' : 'spinRevert');
   ospin.style.animation = `${animationName} ${Math.abs(rotateSpeed)}s infinite linear`;
 }
-
-
 // setup events
 document.onpointerdown = function (e) {
   clearInterval(odrag.timer);
